@@ -40,7 +40,7 @@ public class ChatClient {
 		//create a socket connection to the server on port 5000, and outputstream, inputstream 
 		//and have a thread call the IncomingReader method
 		try {
-			sock = new Socket("10.16.108.169",5000);
+			sock = new Socket("10.16.10.46",5000);
 			outputStream = new ObjectOutputStream(sock.getOutputStream());
 			inputStream = new ObjectInputStream(sock.getInputStream());
 
@@ -196,7 +196,7 @@ public class ChatClient {
 							}
 						}
 						
-						players.get(infoIndex).updateCoordinates(info,infoIndex);
+						//players.get(infoIndex).updateCoordinates(info,infoIndex);
 						gameChat.setPlayers(players);
 					}
 				}
